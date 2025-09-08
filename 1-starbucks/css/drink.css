@@ -1,0 +1,270 @@
+
+/* pc 미디어쿼리 ---------------------------------------------------------------------------------------------------*/
+@keyframes ani1 {
+    from { }
+    to {opacity: 1;}
+}
+/* 섹션6  */
+section.sec6 .background{ margin-top: 50px; position: relative; }
+section.sec6 .text-content{position: absolute; z-index: 100; top: 10%; left: 5%; }
+
+section.sec6 .menubtn{width: 200px;
+                    padding: 8px 16px;
+                    text-align: center;
+                    border: 1px solid #00704A;
+                    color: #00704A}
+section.sec6 .menubtn:hover{color: #fff; background-color: #00704A; border: 1px solid #00704A;}                    
+section.sec6 .text-content .green{color: #00704A;}
+section.sec6 .text-content h1{font-size: 42px; margin-bottom: 30px;}
+section.sec6 .text-content p{font-size: 28px; margin-bottom: 40px;}
+
+section.sec6 .image-content {position: absolute; z-index: 90; bottom: 10px; right: 10px; width: 50%; 
+}
+section.sec6 .image-content img{display: inline-block; width: 27%; 
+opacity: 0; /* 시작은 숨김 */
+animation-name: ani1;
+animation-duration: 1s;
+animation-timing-function: ease;
+animation-fill-mode: forwards;}
+
+section.sec6 .image-content img:nth-child(2){margin-bottom: 50px; animation-delay: 0.4s}
+section.sec6 .image-content img:nth-child(3) {animation-delay: 0.8s}
+
+
+/* 섹션7~8 */
+/* .white-bg 박스크기 */
+.white-bg {width: 100%; padding-top: 100%; position: relative; /* 내부 절대위치용 */ margin-top: 10px;}
+.white-bg img {position: absolute; 
+                top: 50%;
+                left: 50%;
+                height: 90%; /* height과 width 값으로 이미지 크기 조정 */
+                width: auto;
+                transform: translate(-50%, -50%);
+                z-index: 100;}
+.white-bg{background-color: rgba(255, 255, 255, 0.6); }
+
+/* 섹션7  */
+section.sec7 {text-align: center;}
+section.sec7 h2{margin-bottom: 40px; margin-top: 110px;}
+
+section.sec7 .flex-box>div{width: 33.33%; padding: 0 10px;}
+
+section.sec7 h2{font-size: 32px; text-align: center;}
+section.sec7 h3{font-size: 26px; text-align: center; font-weight: normal; margin-top: 20px; margin-bottom: 20px;}
+section.sec7 p{font-size: 16px; text-align: left; margin-bottom: 20px;}
+
+/* 섹션8 */
+section.sec8 {margin-top: 40px; margin-bottom: 40px; }
+section.sec8 li{padding: 8px 16px; border: 1px solid black; color: black; margin-bottom: 30px; cursor: pointer; font-size: 22px; margin-top: 70px;
+                border-right: 0;}
+section.sec8 li.btn-bottle {border-right: 1px solid #000;}
+section.sec8 li.btn-select {border-right: 1px solid #000;}
+
+
+
+section.sec8 .flex-box>.card-box{width: 25%; padding: 0 10px;}
+
+section.sec8 h3{margin-top:20px ; text-align: center; font-size: 26px; font-weight: normal;}
+section.sec8 p{margin-bottom: 50px; margin-top: 30px; font-size: 16px;}
+section.sec8 br{display: none;}
+
+section.sec8 .card9, section.sec8 .card10, section.sec8 .card11, section.sec8 .card12 {height: 80%} /* 9번이미지~12번까지 크기 조절 */
+section.sec8 li:hover{color: #fff; background-color: #00704A;}
+section.sec8 .btn-all{color: #fff; background-color: #00704A;} /* 기본 전체버튼 설정, 이후 제이쿼리를 통해 색상 변경 */
+
+/* section.sec8 li:nth-child(1){margin-left: 1%;} */
+/* PC에서 btn-select 숨기기 */
+section.sec8 .category .btn-select {
+    display: none;
+}
+
+
+/* 태블릿 미디어쿼리 - 1270px -------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1270px) {
+section.sec7 p{font-size: 18px;}
+
+}
+
+
+
+
+
+
+
+/* 태블릿 미디어쿼리 - 991px -------------------------------------------------------------------------------------------------------*/
+@media (max-width: 991px) {
+/* 섹션6 */
+
+section.sec6 .text-content h1{font-size: 36px; }
+section.sec6 .text-content p{font-size: 26px; margin-bottom: 25px;}    
+
+section.sec6 .image-content{text-align: right;}
+section.sec6 .menubtn {width: 160px;}
+
+/* 섹션7 */
+section.sec7 h3 { font-size: 24px;  /* margin-top: 20px; margin-bottom: 20px; */ }
+
+/* 섹션8 */
+section.sec8 .flex-box>.card-box{width: 50%; padding: 0 30px;}
+section.sec8 h3{font-size: 20px;}
+section.sec8 .card9, section.sec8 .card10, section.sec8 .card11, section.sec8 .card12 {height: 70%}
+
+section.sec8 li.btn-all{border-right: 1px solid #000; }
+/* 태블릿에서도 btn-select 숨기기 - 더 구체적인 선택자 사용 */
+section.sec8 .category.flex-box .btn-select { display: none;}
+
+}
+
+
+@media (max-width: 910px) {
+section.sec6 .text-content h1 {font-size: 32px; margin-bottom: 20px;}
+section.sec6 .text-content p {font-size: 24px; margin-bottom: 20px;}
+section.sec6 .text-content {top: 5%;}
+
+section.sec7 h3{font-size: 20px;}
+section.sec7 p{font-size: 16px;}
+}
+
+
+
+
+
+/* 휴대폰 미디어 쿼리 - 767px */
+@media (max-width: 767px) {
+body {padding-top: 40px;}
+
+/* 섹션6 */    
+section.sec6 .background{height: 60vh;}
+section.sec6 .background>img{height: 100%;}
+section.sec6 .image-content{width: 90%; text-align:right; bottom: 0% ; right: 10px; } 
+section.sec6 .text-content {top: 4%; left: 4%;}
+section.sec6 .text-content h1 {font-size: 30px; margin-bottom: 20px;}
+section.sec6 .text-content p {font-size: 20px;}
+
+
+/* 섹션7 */
+section.sec7 .flex-box>div{padding: 0 2px;}
+section.sec7 h2 {font-size: 26px; margin-top: 50px; margin-bottom: 30px;} 
+section.sec7 h3 {font-size: 18px; ;}
+section.sec7 p {display: none;}
+section.sec7 span{display: block;}
+section.sec7 .line {margin-bottom: 20px;}
+
+/* 섹션8 */
+section.sec8 .flex-box>.card-box {width: 50%; padding: 0 10px;}
+section.sec8 h3 {font-size: 18px; font-weight: normal;}
+    section.sec8 p {font-size: 16px; margin-top: 20px;}
+    section.sec8 .mobile-br{display: block;}
+
+/* 모든 버튼 숨기고 전체와 분류만 보이게 */
+section.sec8 .category li { 
+    display: none; margin-top: 0;
+}
+section.sec8 li{font-size: 18px; }
+
+/* 전체 버튼 보이기 */
+section.sec8 .category .btn-all {
+    display: inline-block;
+    width: 47%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+/* 모바일에서만 분류 버튼 보이기 - 가장 구체적인 선택자 사용 */
+
+section.sec8 .category.flex-box .btn-select {
+    display: inline-block;
+    width: 47%;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+section.sec8 .category.flex-box .btn-select::after {
+        content: '▼';
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease;
+    }
+
+
+/* 분류 버튼 활성화시 화살표 변경 */
+section.sec8 .category .btn-select.active {
+    background-color: #00704A;
+    color: white;
+}
+section.sec8 .category.flex-box .btn-select.active::after {
+        transform: translateY(-35%) rotate(180deg);
+    }
+     /* 선택된 상태에서는 화살표 숨기기 */
+    section.sec8 .category.flex-box .btn-select.selected::after {
+        display: none;
+    }
+
+/* 드롭다운 메뉴들 */
+section.sec8 .category .btn-coffee,
+section.sec8 .category .btn-blend,
+section.sec8 .category .btn-tea,
+section.sec8 .category .btn-bottle {
+    display: none;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #333;
+}
+
+/* 드롭다운이 열렸을 때 메뉴들 보이기 */
+section.sec8 .category.dropdown-open .btn-coffee,
+section.sec8 .category.dropdown-open .btn-blend,
+section.sec8 .category.dropdown-open .btn-tea,
+section.sec8 .category.dropdown-open .btn-bottle {
+    display: block;
+}
+
+/* 선택된 드롭다운 항목 스타일 */
+section.sec8 .category .dropdown-selected {
+    background-color: #00704A;
+    color: white;
+}
+/* 문장 3줄 이상 ...표시 */
+section.sec8 p {
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3; 
+-webkit-box-orient: vertical;
+}
+}
+
+/* 휴대폰 미디어 쿼리 - 390px */
+@media (max-width: 390px) {
+    /* 섹션6 */
+    section.sec6 .text-content h1 {
+        font-size: 28px;
+    }
+    section.sec6 .text-content p {
+        font-size: 17px;
+    }
+        section.sec6 .text-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        }
+        section.sec6 .image-content {
+        bottom: 0%;
+    }
+    section.sec6 .image-content img:nth-child(2) {
+    margin-bottom: 30px;
+    }
+
+}
+
+/* 휴대폰 미디어쿼리 - 390px */
+@media (max-width: 390px) {
+
+section.sec6 .image-content{bottom: 2% ;} 
+
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://kit.fontawesome.com/e50a29bb23.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<title>스타벅스</title>
+<style>
+</style>
+</head>
+<body>
+<div class="modal">
+    <div class="modal-wrap">           
+        <div class="modal-body">
+            <div class="modal-close"><i class="fa-solid fa-xmark"></i></div>
+            <h2>웹 페이지 설명서</h2>
+            <img src="img/modal.png" alt= />
+        </div>
+    </div>
+</div>
+
+<header>
+    <nav class="container">
+        <ul class="flex-box">
+            <li class="logo"><a href="index.html"><img src="img/1-star_logo.png" alt=""></a></li>
+            <li class="nav-item"><a href="#">MENU</a> <!-- relative -->
+                <div class="sub-menu"> <!-- absolute -->
+                    <div class="sub-menu-box">
+                        <ul><li><a href="drink.html">커피</a></li></ul>
+                        <ul><li><a href="drink.html">음료</a></li></ul>
+                        <ul><li><a href="#">푸드</a></li></ul>
+                        <ul><li><a href="#">상품</a></li></ul>
+                        <ul><li><a href="#">카드</a></li></ul>
+                        <ul><li><a href="coffee.html">메뉴이야기</a></li></ul>                        
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">STORE</a></li>
+            <li><a href="#">STARBUCKS REWARDS</a></li>
+            <li><a href="#">WHAT'S NEW</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">MY STARBUCKS</a></li>
+            <li><a href="#">CUSTOMER SERVICE</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- 모바일 메뉴 -->
+    <div class="mobile-menu">
+        <div class="login-btn"><i class="fa-solid fa-user"></i></div>
+        <div class="hamburger bt"><i class="fa-solid fa-bars"></i></div>
+    </div>
+
+<div><!-- 사이드 메뉴 -->
+    <nav class="side-menu">
+        <div class="side-menu-item">
+            <div class="side-menu-header">MENU</div>
+            <div class="side-submenu">
+                <a href="drink.html">커피</a>
+                <a href="drink.html">음료</a>
+                <a href="#food">푸드</a>
+                <a href="#product">상품</a>
+                <a href="#card">카드</a>
+                <a href="coffee.html">메뉴 이야기</a>
+            </div>
+        </div> 
+        <!--  1안 :  class="side-menu-header"를 없앤다.
+            즉 store~CUSTOMER SERVICE까지의 클래스를 없애면 가상자로 받는 서브메뉴 ▼도 모두 사라짐 -->
+        <div class="side-menu-item">
+            <div class="side-menu-header">STORE</div>  
+            <div class="side-submenu">
+                <a href="#">매장찾기</a>
+                <a href="#">드라이브 스루 매장</a>
+                <a href="#">스타벅스 리저브 매장</a>
+                <a href="#">커뮤니티 스토어 매장</a>
+            </div>
+        </div>
+        <div class="side-menu-item">
+            <div class="side-menu-header">STARBUCKS REWARDS</div>
+            <div class="side-submenu">
+                <a href="#">스타벅스 리워드</a>
+                <a href="#">스타벅스 카드</a>
+                <a href="#">스타벅스 모바일 카드</a>
+            </div>
+        </div>
+        <div class="side-menu-item">
+            <div class="side-menu-header">WHAT'S NEW</div>
+            <div class="side-submenu">
+                <a href="#">단체 및 기업 구매 안내</a>
+                <a href="#">단체 주문 배달 안내</a>
+            </div>
+        </div>
+        <div class="side-menu-item">
+            <div class="side-menu-header">MY STARBUCKS</div>
+            <div class="side-submenu">
+                <a href="#">My 리워드</a>
+                <a href="#">My 쿠폰</a>
+                <a href="#">My 캘린더</a>
+                <a href="#">My 메뉴</a>
+            </div>
+        </div>
+        <div class="side-menu-item">
+            <div class="side-menu-header">CUSTOMER SERVICE</div>
+            <div class="side-submenu">
+                <a href="#">이벤트</a>
+                <a href="#">뉴스</a>
+                <a href="#">매장별 이벤트</a>
+                <a href="#">공지사항</a>
+                <a href="#">웰페이퍼</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<section class="container sec1"> 
+    <!-- Swiper -->
+    <div class="flex-box">
+        <div class="text-box">
+            <h2>Light up <br> 
+                Your <span>Summer</span></h2>
+            <h3>올 여름, <span>스타벅스</span>에서 만나는 <br class="mobile-br">특별한 <br class="tablet-br"> 경험</h3>
+            <p>시원한 음료와 다채로운 푸드,<br>
+                감성을 더하는 시즌 한정 MD와 굿즈,<br>
+                당신의 여름을 더 특별하게 밝혀줄 순간까지</p>
+            <div class="btn">자세히 보기</div>
+        </div>
+        <div class="swiper-box">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/1-main_carousel1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/1-main_carousel2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/1-main_carousel3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/1-main_carousel4.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container sec2"> 
+    <div class="flex-box">
+        <div class="image-container" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+            <img src="img/1-star-rewards.png" alt="리워드 로고">        
+        </div>
+        <div class="text-container">
+            <div class="text-box2" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"> 
+                <h3>STARBUCKS<br class="mobile-br"> REWARDS/ <br class="mobile-br2"> MEMBERSHIP</h3>
+                <h4>스타벅스를 더 특별하게 즐기는 방법</h4>
+                <p>적립되는 별로 나만의 리워드를 누리고, <br>
+                스타벅스와 함께하는 일상속 작은기쁨을<br class="mobile-br">
+                더해보세요.</p>
+                <div class="btn-box">
+                    <a href="#" class="sec2-btn1">회원가입</a>
+                    <a href="#" class="sec2-btn2">로그인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<section class="container sec3"> 
+    <h3>KEY CATEGORY PRODUCT HIGHLIGHT</h3>
+    <div class="flex-box"> <!-- 33.33%  -->
+        <div>
+            <div class="image-wrapper"> 
+                <div class="image-wrapper-box">
+                    <img src="img/1-cate1.png" alt="시그니처 콜드브루">
+                    <div class="icon"><i class="fa-solid fa-circle-plus"></i></div>
+                </div>
+                <h4>시그니처 콜드브루</h4>
+                <p>산뜻한 향과 부드러운 질감, <br>여름을 깨우는 한 잔</p>
+            </div>
+        </div>
+        <div>
+            <div class="image-wrapper">
+                <div  class="image-wrapper-box">
+                    <img src="img/1-cate2.png" alt="프리미엄 푸드">
+                    <div class="icon"><i class="fa-solid fa-circle-plus"></i></div>
+                </div>
+                <h4>프리미엄 푸드</h4>
+                <p>바삭한 식감과 고소한 풍미, <br>디저트를 만나보세요</p>
+            </div>
+        </div>
+        <div>
+            <div class="image-wrapper">
+                <div  class="image-wrapper-box">
+                    <img src="img/1-cate3.png" alt="리저브 커피">
+                    <div class="icon"><i class="fa-solid fa-circle-plus"></i></div>
+                </div>
+                <h4>리저브 커피</h4>
+                <p>리저브 매장에서만 즐길 수 있는 <br class="air">깊고 풍부한 추출 맛</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container sec4"> 
+    <div class="flex-box" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+        <h2>일상 속 가장 특별한 순간을,<br class="h2-br"> 스타벅스와 함께</h2>
+        <div><img src="img/1-section.png" alt="스타벅스 매장"></div>
+        <div>
+            <h3>커피 한잔이 필요한 순간,<br>
+                리저브 바부터 드라이브 스루까지<br>
+                당신의 라이프스타일에 맞는 매장이 함께합니다.</h3>
+                <a href="#" class="sec4-btn">매장 찾기</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+    <div class="footer-sections flex-box"> <!-- 20%씩 -->
+            <div class="footer-section">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">한눈에 보기</a></li>
+                    <li><a href="#">스타벅스 사명</a></li>
+                    <li><a href="#">스타벅스 소개</a></li>
+                    <li><a href="#">컴플라이언스</a></li>
+                    <li><a href="#">국내 뉴스룸</a></li>
+                    <li><a href="#">세계의 스타벅스</a></li>
+                    <li><a href="#">글로벌 뉴스룸</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>CORPORATE SALES</h3>
+                <ul>
+                    <li><a href="#">단체 및 기업 구매 안내</a></li>
+                    <li><a href="#">단체 주문 배송 안내</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>PARTNERSHIP</h3>
+                <ul>
+                    <li><a href="#">신규 입점 제의</a></li>
+                    <li><a href="#">협력 고객사 등록신청</a></li>
+                    <li><a href="#">중개업체 확인</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>ONLINE COMMUNITY</h3>
+                <ul>
+                    <li><a href="#">페이스북</a></li>
+                    <li><a href="#">트위터</a></li>
+                    <li><a href="#">유튜브</a></li>
+                    <li><a href="#">인스타그램</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>RECRUIT</h3>
+                <ul>
+                    <li><a href="#">채용 소개</a></li>
+                    <li><a href="#">채용 지원하기</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-terms"> <!-- 약관 -->
+            <div class="flex-box">
+                <a href="#" class="green">개인정보처리방침</a>
+                <a href="#">영상정보처리기기 운영관리방침</a>
+                <a href="#">홈페이지 이용약관</a>
+                <a href="#" class="green">위치정보 이용약관</a>
+                <a href="#">스타벅스 카드 이용약관</a>
+                <a href="#">신세계 유니버스 클럽 이용약관</a>
+                <a href="#">비회원 이용약관</a>
+                <a href="#">My DT Pass 서비스 이용약관</a>
+            </div>
+        </div>
+        <div class="footer-btns"> <!-- 버튼 -->
+            <div class="flex-box">
+                <a href="#" class="footer-btn">찾아오시는 길</a>
+                <a href="#" class="footer-btn">신규입점제의</a>
+                <a href="#" class="footer-btn">사이트 맵</a>
+            </div>
+        </div>
+        <div class="footer-info"> 
+            <div class="flex-box">
+                <p>사업자등록번호 : 201-81-21515</p>
+                <p>주식회사 에스씨케이컴퍼니 | 대표이사 : 손정현</p>
+                <p>TEL : 1522-3232</p>
+                <p>개인정보 보호책임자 : 이찬우</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2025 Starbucks Coffee Company. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init({disable: 'mobile'});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        clickable: true,
+        el: ".swiper-pagination",
+    },
+    loop: true
+    });     
+</script>
+</body>
+</html>

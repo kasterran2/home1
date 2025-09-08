@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* 2페이지 본문 */
+section.sec5 {margin-top: 50px;}
+section.sec5 h2{font-size: 30px; margin-bottom: 15px; margin-left: 10px;}
+section.sec5 h3{font-size: 30px; margin-bottom: 20px; margin-left: 10px;}
+section.sec5 h4{font-size: 22px; margin: 30px 0 ; margin-left: 10px;}
+section.sec5 p{font-size: 20px; margin-bottom: 20px; margin-left: 10px;}
+
+section.sec5 .top img{height: 350px; object-fit: cover; margin-bottom: 60px; } /* 직접 작은 이미지를 구해서 pc 테블릿 모바일에 넣기 */
+
+section.sec5 .middle {margin-bottom: 60px; }
+section.sec5 .middle img{margin-top: 50px;}
+section.sec5 .middle .flex-box {align-items: center;}
+section.sec5 .middle .flex-box>div:nth-child(1){width: 40%;}
+section.sec5 .middle .flex-box>div:nth-child(2){width: 50%;}
+
+section.sec5 .text-box {margin-left: 5%;}
+
+section.sec5 .bottom {margin-top: 60px;}
+
+section.sec5 .bottom .flex-box {
+    justify-content: space-around;
+}
+section.sec5 .bottom .flex-box > div {
+    width: 30%;
+    text-align: center;
+    padding: 0 10px;
+}
+
+section.sec5 .bottom img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; 
+    margin: 0 auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-top: 30px;}
+
+section.sec5 .bottom p{text-align: center;}
+
+/* 태블릿 미디어쿼리 - 991px -------------------------------------------------------------------------------------------------------*/
+@media (max-width: 991px) { /* 중간 이미지 조정할 것. */
+section.sec5 h2{font-size: 36px; margin-left: 0;}
+section.sec5 h3{font-size: 30px; margin-bottom: 20px; }
+section.sec5 h4{font-size: 26px; margin-bottom: 20px; }
+section.sec5 p{font-size: 26px; }
+
+section.sec5 .text-box{padding: 50px 0;}
+section.sec5 .middle img{margin-top: 0px;}
+
+section.sec5 .middle .flex-box > div:nth-child(1) {width: 70%;}
+section.sec5 .middle .flex-box > div:nth-child(2) {width: 60%;}
+
+section.sec5 .middle .flex-box {flex-direction: column; align-items: center;}
+section.sec5 .middle .flex-box > div:nth-child(1) {order: 2;}
+section.sec5 .middle .flex-box > div:nth-child(2) {order: 1;}
+
+section.sec5 .top, section.sec5 .middle, section.sec5 .bottom{padding: 0px 20px;}
+
+section.sec5 .bottom p{font-size: 22px; text-align: justify;}
+section.sec5 .bottom .flex-box > div {width: 32%;}
+
+section.sec5 .circle1 br{display: none;}
+section.sec5 .circle2 br{display: none;}
+section.sec5 .circle3 br{display: none;}
+
+
+}
+@media (max-width: 821px){
+    section.sec5 p {font-size: 24px;}
+    section.sec5 h4 {font-size: 22px; margin: 30px 0; margin-left: 0}
+    section.sec5 .bottom img {    width: 220px;    height: 220px;}
+        section.sec5 .bottom p {
+        font-size: 20px;}
+}
+
+
+
+
+/* 휴대폰 미디어 쿼리 - 767px ----------------------------------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+section.sec5 h2{font-size: 30px; margin-bottom: 15px; }
+section.sec5 h3{font-size: 30px; margin-bottom: 15px;} 
+section.sec5 h3 br{display: none;} 
+section.sec5 p{font-size: 20px; margin-bottom: 20px;}
+
+section.sec5 .top img {height: auto; margin-bottom: 0px;}
+
+section.sec5 .text-box {margin-left: 0;}
+    
+
+section.sec5 .middle img{margin-top: 0px;}
+section.sec5 .middle .flex-box > div:nth-child(1){width: 100%;}
+section.sec5 .middle .flex-box > div:nth-child(2) {width: 100%;}
+
+    
+section.sec5 .bottom .flex-box {flex-direction: column; align-items: center;}   
+section.sec5 .bottom .flex-box > div {width: 100%;  padding: 0 20px;}
+section.sec5 .bottom .flex-box > div:last-child {margin-bottom: 20px;}
+
+section.sec5 .bottom img{width: 180px; height: 180px; }
+
+section.sec5 .bottom p{font-size: 20px;}
+section.sec5 p br{display: none;}
+}
+
+@media (max-width: 430px) {
+
+section.sec5 h2{font-size: 23px; }
+section.sec5 h3{font-size: 24px; margin-bottom: 10px;}
+section.sec5 p{font-size: 18px; }
+
+section.sec5 .middle p{margin-bottom: 0px;}
+
+section.sec5 .bottom p{font-size: 18px;}
+section.sec5 .circle2 br{display: block;}
+}
+
+@media (max-width: 376px) {
+    section.sec5 .middle br {display: none};
+section.sec5 .circle3 .mobile-414-br { display: none }  
+section.sec5 .circle1 br {display: none;}
+}
