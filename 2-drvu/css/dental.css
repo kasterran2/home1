@@ -1,0 +1,314 @@
+main{margin-top: 60px;}
+
+.banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            min-height: 400px;
+            overflow: hidden;
+        }
+
+        .banner > div {
+            position: relative;
+            width: 100%;
+            height: 100%
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.5;
+            border-radius: 20px;
+        }
+
+
+.text-rapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+.text-rapper h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #1C2857;
+}
+
+.tablet-br{display: none;}
+/* About Section */
+        .about {
+            margin-top: 80px ;
+        }
+
+        .about h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 60px;
+            color: #1C2857;
+        }
+
+        .about h3{ font-size: 24px;margin-bottom: 30px; color: #1C2857; margin-top: 20px;}  
+
+.about-text br {
+    display: inline;
+}
+
+        .about-content {
+            flex-direction: column;
+        }
+
+        .about-text {
+            flex: 1;
+            text-align: center;  
+            }
+        
+        
+
+        .about-text p {
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+
+/* features Section */
+.features {
+    background: #EEFBFF;
+    margin-top: 40px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    }
+
+.features h3 {
+    text-align: center;
+    color: #1C2857;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.feature-wrapper {
+    display: flex;
+    justify-content:space-between;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.feature-wrapper li{
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* list-style: disc; */
+}
+
+.feature-column {
+    text-align: left;
+    padding-left: 20px;
+    margin: 0 30px;
+}
+
+.feature-column li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+
+/* section sec1 */
+
+section.sec1 .flex-box>div{width: 25%; padding: 10px;}
+section.sec1 h3{text-align: center; margin-top: 100px; margin-bottom: 30px; font-size: 24px; color: #1C2857}
+section.sec1 h4{text-align: center; margin-top: 20px; margin-bottom: 30px;}
+
+
+/* section sec2 */
+.sec1,.sec2 ,.sec3 p{font-size: 22px; text-align: justify;}
+
+section.sec2 .flex-box>div{width: 25%; padding: 10px}
+section.sec2 h3{text-align: center; margin-top: 90px; margin-bottom: 30px; color: #1C2857}
+section.sec2 h4{text-align: center; margin-top: 20px;
+    margin-bottom: 30px;}
+
+/* section sec3 */
+section.sec3 p{font-size: 16px; text-align: center; color: #333;margin-top: 0;}
+section.sec3 h3{font-size: 24px; text-align: center; margin-top: 80px; margin-bottom: 30px; color: #1C2857}
+
+section.sec3 .flex-box{justify-content: center; flex-direction: row;}
+section.sec3 .flex-box.image-div {
+            width: 50%;
+            padding: 10px;
+            align-items: center;}
+.image-div img {
+            width: 90%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 20px;}
+section.sec3 .flex-box>div{align-content: center;
+        justify-items: center;}
+
+
+/* section sec4 */
+section.sec4 {padding: auto; }
+
+section.sec4 h3{text-align: center; font-size: 24px; margin-bottom: 30px; color: #1C2857; margin-top: 90px;}
+section.sec4 p{text-align: center; margin-bottom: 80px; font-size: 20px;}
+
+section.sec4>div{margin: 0 auto;   }
+
+/* section sec5 */
+section.sec5 {padding: auto; background-color: #EEFBFF; margin-bottom: 90px; border-radius: 20px;}
+
+section.sec5 h3{text-align: center; font-size: 24px; margin-bottom: 30px; color: #1C2857; padding-top: 20px; }
+section.sec5 p{text-align: center; padding-bottom: 20px; font-size: 20px;}
+
+
+/* section sec6 */
+section.sec6 {background-color: #1C2857; color: #fff; border-radius: 20px; margin-bottom: 50px;}
+
+section.sec6 h3{text-align: center; font-size: 24px; margin-bottom: 30px; padding-top:30px ; color: #fff}
+section.sec6 p{text-align: center; margin-bottom: 30px; font-size: 20px;}
+
+section.sec6 .flex-box p{padding: 20px 8px;   color: #000; margin: 10px; background-color: #fff; border-radius: 20px;}
+section.sec6 .flex-box>div{width: 33.33%; border: 10px; margin-bottom: 30px;}
+
+@media (max-width: 1024px) {
+    section.sec3 .flex-box>div {width: 50%;}
+    section.sec1 .flex-box div br {
+        display: none;}
+        section.sec2 br {
+        display: none;}
+}
+
+
+/* 태블릿: 768px ~ 992px */
+@media (max-width: 992px) {
+.text-rapper h1 {
+                font-size: 28px;
+                text-align: left;
+            }   
+   /* About Section */
+.about-text br {
+        display: inline;
+    }
+.about-text {margin-right: 0}
+.tablet-br{display: block;}
+
+.text-rapper {left: 55%;}
+
+/* features section */
+    .features {margin-top: 40px;}
+    .feature-wrapper {
+        flex-direction: column;
+        align-items: center; /* 가운데 정렬 원할 경우 */
+    }
+
+    .feature-column {
+        margin:  0; /* 위아래 여백 조정 */
+        padding-left: 0; /* 좌측 패딩 제거 */
+        text-align: center; /* 가운데 정렬 원할 경우 */
+    }
+
+    .feature-wrapper ul {
+        text-align: center; /* 모든 ul 요소 가운데 정렬 원할 경우 */
+        font-size: 20px;
+        text-align: left
+    }   
+
+    
+
+
+    section.sec1 .flex-box>div{width: 50%; padding: 30px;}
+    section.sec1 .flex-box div br{display: none;}
+
+    section.sec2 .flex-box>div{width: 50%; padding: 30px;}
+    section.sec2 br{display: none;}
+
+/* section sec3 */
+section.sec3 .flex-box>div {width: 50%; align-content: center;
+        justify-items: center;}
+section.sec3 p{margin-top: -10px; margin-bottom:80px; font-size: 16px;}
+section.sec3 br{display: none;}
+
+/* section sec4 */
+    section.sec4 br{display: none;}
+    section.sec4 p{width: 78%; margin: 0 auto; text-align: left; margin-bottom: 85px;}
+section.sec4 h3 {margin-bottom: 30px; margin-top: 90px;}
+    
+/* section sec5 */
+    section.sec5 br{display: none;}
+    section.sec5 p{width: 78%; margin: 0 auto; text-align: left;}
+    section.sec5 h3 {margin-bottom: 30px;}
+    section.sec5 {padding: 0; margin: 0 20px 90px 20px; border-radius: 20px;}
+    /* section sec6 */
+    section.sec6 span{display: block;}
+    section.sec6 {border-radius: 0};
+    }
+
+/* 모바일: 767px 이하 */
+@media (max-width: 767px) {
+    .features {
+        margin-top: 70px;
+    }
+    section.sec1 h4 {margin-top: 10px; margin-bottom: 20px;}
+section.sec4 h3 {margin-bottom: 30px; margin-top: 70px;}
+section.sec4 p {margin-bottom: 70px;}
+section.sec5 {padding: 0; margin: 0 20px 70px 20px; border-radius: 20px;}
+.banner{height: 250px; min-height: 250px}
+.text-rapper {padding: 5px; left: 50%; width: 85%;}
+.text-rapper h1 {font-size: 20px; color: #1C2857;}
+.tablet-br{display: none;}
+
+/* about-text */
+.banner{margin-bottom: -50px;}
+.about-text br {display: none;}
+
+.about-text {margin-right: 0;}
+.about-text p{margin: 0 auto; text-align: left; font-size: 20px;}
+.about-text h3{text-align: center; margin-top: -20px;} 
+.about h3 {margin-top: 40px};
+
+.feature-wrapper li {
+    font-size: 18px; }
+.feature-wrapper {
+            display: flex;
+            flex-direction: column; /* 세로 배치로 변경 */}
+section.sec1 h3 {
+    margin-top: 65px; 
+    margin-bottom: 30px
+}
+.features h3 {margin-bottom: 30px; margin-top: 20px}
+section.sec1 .flex-box>div {
+width: 50%;
+padding: 10px
+}
+.sec1,.sec2 ,.sec3 p{font-size: 18px; text-align: start;}
+section.sec2 .flex-box>div {width: 50%; padding: 10px}
+section.sec2 h3 {font-size: 24px; margin-bottom: 30px; margin-top: 50px;}
+
+section.sec2 h4 {
+margin-top: 10px;
+margin-bottom: 20px;}
+
+section.sec3 h3 {margin-bottom: 30px; margin-top: 60px;}
+section.sec3 p {margin-bottom: 0; text-align: left;}
+
+
+section.sec4 p{margin-bottom: 40px;}
+
+section.sec6 p {font-size: 16px;}
+section.sec6 .flex-box p{padding: 20px 0;}
+}
+
+@media (max-width: 390px) {
+.feature-wrapper li {
+    font-size: 18px;}
+.feature-column li {
+    font-size: 18px;}
+}
+
+@media (max-width: 360px) {
+.text-rapper h1 {
+    font-size: 20px;
+}
+.text-rapper {width: 96%;}
+}

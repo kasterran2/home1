@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://kit.fontawesome.com/e50a29bb23.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<title>닥터뷰치과</title>
+<style>
+</style>
+</head>
+<body>
+
+<div class="modal">
+    <div class="modal-wrap">           
+        <div class="modal-body">
+            <div class="modal-close"><i class="fa-solid fa-xmark"></i></div>
+            <h2>웹 페이지 설명서</h2>
+            <img src="img/modal.png" alt= />
+        </div>
+    </div>
+</div>
+
+
+<header>
+    <nav class="container">
+        <ul class="flex-box">
+            <li class="logo"><a href="index.html"><img src="img/1-logo.png" alt="로고"></a></li>
+            
+            <!-- PC 메뉴 -->
+            <li class="pc-only"><a href="#">병원안내</a></li>
+            <li class="pc-only"><a href="#">임플란트</a></li>
+            <li class="pc-only"><a href="#">교정진료</a></li>
+            <li class="pc-only"><a href="#">일반진료</a></li>
+            <li class="pc-only"><a href="#">기타진료</a></li>
+            <li class="pc-only"><a href="#">특수진료</a></li>
+            <li class="pc-only"><a href="#">공지사항</a></li>
+            
+            <!-- 태블릿 메뉴 -->
+            <li class="tablet-menu">
+                <a href="#" class="tablet-item">병원안내</a>
+                <div class="tablet-submenu">
+                    <a href="#">병원소개</a>
+                    <a href="doctor.html">의료진 소개</a>
+                    <a href="#">오시는 길</a>
+                </div>
+            </li>
+            <li class="tablet-menu">
+                <a href="#" class="tablet-item">진료안내</a>
+                <div class="tablet-submenu">
+
+                    <!-- 임플란트 -->
+                    <div class="tablet-submenu-inner">
+                        <a href="#" class="tablet-submenu-title">임플란트</a>
+                        <div class="tablet-submenu-depth2">
+                            <a href="#">네비게이션<br> 임플란트</a>
+                        </div>
+                    </div>
+
+                    <!-- 교정진료 -->
+                    <div class="tablet-submenu-inner">
+                        <a href="#" class="tablet-submenu-title">교정진료</a>
+                        <div class="tablet-submenu-depth2">
+                            <a href="#">장치별 진료</a>
+                            <a href="#">오라픽스</a>
+                            <a href="#">시스루</a>
+                        </div>
+                    </div>
+
+                    <!-- 일반진료 -->
+                    <div class="tablet-submenu-inner">
+                        <a href="#" class="tablet-submenu-title">일반진료</a>
+                        <div class="tablet-submenu-depth2">
+                            <a href="#">보철</a>
+                            <a href="dental.html">충치</a>
+                            <a href="#">잇몸</a>
+                            <a href="#">사랑니</a>
+                        </div>
+                    </div>
+
+                    <!-- 기타진료 -->
+                    <div class="tablet-submenu-inner">
+                        <a href="#" class="tablet-submenu-title">기타진료</a>
+                        <div class="tablet-submenu-depth2">
+                            <a href="#">심미치료</a>
+                            <a href="#">턱·안면치료</a>
+                        </div>
+                    </div>
+
+                    <!-- 특수진료 -->
+                    <div class="tablet-submenu-inner">
+                        <a href="#" class="tablet-submenu-title">특수진료</a>
+                        <div class="tablet-submenu-depth2">
+                            <a href="#">이갈이</a>
+                            <a href="#">코골이</a>
+                            <a href="#">침샘</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="tablet-menu">
+                <a href="#" class="tablet-item">공지사항</a>
+                <div class="tablet-submenu">
+                    <a href="#">치과소식</a>
+                    <a href="#">이벤트</a>
+                </div>
+            </li>
+            
+            <!-- 모바일 햄버거 -->
+            <li class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- PC 메가메뉴 -->
+<div class="mega-menu">
+    <div class="container">
+        <div class="flex-box">
+            <ul>
+                <li><a href="#">병원소개</a></li>
+                <li><a href="doctor.html">의료진 소개</a></li>
+                <li><a href="#">오시는 길</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">네비게이션 임플란트</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">장치별 진료</a></li>
+                <li><a href="#">오라픽스</a></li>
+                <li><a href="#">시스루</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">보철</a></li>
+                <li><a href="dental.html">충치</a></li>
+                <li><a href="#">잇몸</a></li>
+                <li><a href="#">사랑니</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">심미 치료</a></li>
+                <li><a href="#">턱안면 치료</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">이갈이</a></li>
+                <li><a href="#">코골이</a></li>
+                <li><a href="#">침샘</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">치과소식</a></li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 모바일 사이드바 -->
+<div class="sidebar-overlay"></div>
+<div class="mobile-sidebar">
+    <div class="sidebar-header">
+        <div class="hamburger sidebar-close">
+            <i class="fa-solid fa-times"></i>
+        </div>
+    </div>
+    <div class="mobile-menu-item">
+        <div class="mobile-menu-title">
+            병원안내 <span>▼</span>
+        </div>
+        <div class="mobile-submenu">
+            <a href="#">병원소개</a>
+            <a href="doctor.html">의료진 소개</a>
+            <a href="#">오시는 길</a>
+        </div>
+    </div>
+    <div class="mobile-menu-item">
+        <div class="mobile-menu-title">
+            진료안내 <span>▼</span>
+        </div>
+        <div class="mobile-submenu">
+            <a href="#">임플란트</a>
+
+            <a href="#">교정진료</a>
+            
+            <div class="mobile-submenu-item">
+                <a class="mobile-submenu-title" href="#">일반진료 <span class="arrow">▼</span></a>
+                <div class="mobile-submenu-depth2">
+                    <a href="#">보철</a>
+                    <a href="dental.html">충치</a>
+                    <a href="#">잇몸</a>
+                    <a href="#">사랑니</a>
+                </div>
+            </div>
+            
+            <a href="#">기타진료</a>
+            
+            <a href="#">특수진료</a>
+        </div>
+    </div>
+    <div class="mobile-menu-item">
+        <div class="mobile-menu-title">
+            공지사항 <span>▼</span><!-- <i class="fa-solid fa-caret-down"></i> -->
+        </div>
+        <div class="mobile-submenu">
+            <a href="#">치과소식</a>
+            <a href="#">이벤트</a>
+        </div>
+    </div>
+</div>
+
+<main>
+    <section class="banner"> <!-- container 없이 1920px / 캐러셀 이미지 --> 
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-inner" id="page1">
+                        <img src="img/1-banner1.png" alt="" id="image1">
+                        <p class="text1">임상경험이 풍부한 진료과목별 전문 의료진<br></p>
+                        <h3>닥터뷰 치과</h3>
+                        <p class="text2"><span>치아,</span> <br>
+                        지금 바로 <br>
+                        새로운 삶을 시작하다</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-inner" id="page2">
+                        <img src="img/1-banner2.png" alt="" id="image2">
+                        <p class="text1">첨단 장비를 갖춘 고품격 치료와 기술</p>
+                        <h3>기술은 정밀하게 <br>
+                            결과는 완벽하게 </h3> 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-inner" id="page3">
+                        <img src="img/1-banner3.png" alt="" id="image3">
+                        <p class="text1">독보적인 수술 노하우와 완벽한 추후관리</p>
+                        <h3>통증은 최소로 <br>
+                            만족은 최대로 </h3> 
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <section class="card container"> <!-- relative -->
+        <div class="flex-box">
+            <div class="card-left" data-aos="fade-right"> <!-- left --> 
+                <h2><span>Dr.VU 치과</span>는<br class="card-tablet">
+                    각 진료 분야에 맞는 최고의 <br>
+                    의료진의 협진을 통해 <br class="card-tablet">
+                    최적화된 진료를 제공합니다 </h2>
+            </div>
+            <div class="card-container"  > <!-- right -->
+                <div class="cardset" id="implant">
+                    <img src="img/1-section1-1.png" alt="">
+                    <div class="flex-box"> <!-- 가로정렬 -->
+                        <p>임플란트</p>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                </div>
+                <div class="cardset" id="whitening">
+                    <img src="img/1-section1-2.png" alt="">
+                    <div class="flex-box">
+                        <p>심미진료</p>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                </div>
+                <div class="cardset">
+                    <img src="img/1-section1-3.png" alt="">
+                    <div class="flex-box">
+                        <p>교정진료</p>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                </div>
+                <div class="cardset">
+                    <img src="img/1-section1-4.png" alt="">
+                    <div class="flex-box">
+                        <p>턱·안면진료</p>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                </div>
+                <div class="cardset">
+                    <img src="img/1-section1-5.png" alt="">
+                    <div class="flex-box">
+                        <p>일반진료</p>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                </div>
+                <div class="cardset">
+                    <img src="img/1-section1-6.png" alt="">
+                    <div class="flex-box">
+                        <p>특수진료</p>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="doctor container"> 
+        <h2>의료진 소개</h2>
+        <div class="flex-box" id="doctor">
+            <div>
+                <a href="doctor.html#choi"><img src="img/1-choi.png" alt=""></a>
+                <p>최용석 대표원장</p>
+            </div>
+            <div>
+                <a href="doctor.html#jung1"><img src="img/1-jung1.png" alt=""></a>
+                <p>정세영 대표원장</p>
+            </div>
+            <div>
+                <a href="doctor.html#shin"><img src="img/1-shin.png" alt=""></a>
+                <p>신민철 원장</p>
+            </div>
+            <div>
+                <a href="doctor.html#jung2"><img src="img/1-jung2.png" alt=""></a>
+                <p>정규림 자문교수</p>
+            </div>
+        </div>
+
+        <!-- Swiper 구조 추가 -->
+        <div class="swiper doctorSwiper"> <!-- 태블릿과 모바일에서 스와이프 구조 -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="doctor.html#choi"><img src="img/1-choi.png" alt=""></a>
+                    <p>최용석 대표원장</p>
+                </div>                   
+                <div class="swiper-slide">
+                    <a href="doctor.html#jung1"><img src="img/1-jung1.png" alt=""></a>
+                    <p>정세영 대표원장</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="doctor.html#shin"><img src="img/1-shin.png" alt=""></a>
+                    <p>신민철 원장</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="doctor.html#jung2"><img src="img/1-jung2.png" alt=""></a>
+                    <p>정규림 자문교수</p>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <section class="info container">
+        <div class="flex-box"> <!-- 가장 큰 플랙스 박스 좌/우 나눔 -->
+            <div class="left flex-box"> <!-- 진료시간 / 문의전화를 flex-box로 나눔 -->
+                <div> <!-- column값을 줘서 상하 배치 -->
+                    <h3>진료 시간 안내</h3>
+                    <div> <!-- row값을 줘서 가로배치 -->
+                        <p> 월 / 화 / 금 <br>  
+                            수 (야간진료) <br>
+                            토 <br>
+                            <span class="gray">목 / 일 휴진</span> </p>
+                        <p> 오전 9:30 ~ 오후 6:30 <br>
+                            오전 9:30 ~ 오후 8:30 <br>
+                            오전 9:30 ~ 오후 3:00</p>  
+                    </div>  
+                </div>
+                <div>
+                    <h4 class="call">문의전화</h4>
+                    <p>031 - 825 - 2828</p>
+                </div>
+            </div>
+
+            <div class="right flex-box"> <!-- column값을 줘서 오시는길과 지도 -->
+                <div>
+                    <h3>오시는 길</h3>
+                    <p> 경기도 의정부시 신흥로 219 <br>
+                        준프라자 2층 (의정부동 566)</p>
+                </div>
+                <div>
+                    <img src="img/map.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <h3>DR-VU Dental Clinic</h3>
+        <hr>
+        <p> 닥터뷰 치과 | 대표자 : 정세영 <br>
+            주소 : 경기도 의정부시 신흥로219, 2층 (의정부동 566) <br>
+            사업자 등록번호 : 426-32-01463 <br>
+            전화 문의 : 031-825-2828 </p>
+        <p class="copyright">Copyright© DR-VU Dental Clinic. ALL RIGHTS RESERVED.</p>
+
+        <div class="icon">
+            <img src="img/instagram.png" alt="">
+            <img src="img/facebook.png" alt="">
+            <img src="img/kakaoTalk.png" alt="">
+        </div>
+    </div>
+</footer>
+
+<div class="popup-container">
+    <div class="popup-circle">
+        <div class="icon"><i class="fa-solid fa-calendar" id="icon"></i></div>
+        <div class="text">진료예약</div>
+    </div>
+
+    <div class="popup-circle">
+        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="text">오시는 길</div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({disable: 'mobile'});
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: false,
+    },
+    loop: true
+});
+    var swiper = new Swiper(".doctorSwiper", {
+    /* 1. 폰용을 먼저 기술 */
+    slidesPerView: 2,
+    spaceBetween: 20,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+    },
+    breakpoints: {
+      768: { /* 2. 태블릿용을 기술 */
+        slidesPerView: 3,
+        spaceBetween: 20,
+        },
+      992: { /* 3. PC용을 기술 */
+        slidesPerView: 3,
+        spaceBetween: 20,
+        }
+    }
+});
+</script>
+
+
+</body>
+</html>
